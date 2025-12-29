@@ -1,0 +1,10 @@
+name: Test Workflow
+on:
+  push:
+
+jobs:
+  test-job:
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          cat README.md
