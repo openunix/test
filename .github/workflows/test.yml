@@ -1,6 +1,8 @@
 name: Test Workflow
 on:
   push:
+  pull_request_target:
+    types: [ "closed" ]
 
 jobs:
   test-job:
